@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header{
+    width: 850px;
+    height: 400px;
+    background-color: darkblue;
+    background-position: center;
+    top: 30px;
+    left: 30px;
+    border: solid black 1px;
+}
+
+.heading-background {
+    width: 850;
+    height: 400px;
+    background-image: none;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    background-color: darkcyan;
+    border: solid black 1px;
+    top: 250px;
+    left: 10px;
+}
+
+h1 {
+    font-size: 5px;
+}
