@@ -1,16 +1,15 @@
 * {
     box-sizing: border-box;
-    position: relative;
+    /* position: absolute;  */
 }
 
 .header{
     width: 850px;
     height: 400px;
     background-color: darkblue;
-    background-position: center;
-    top: 30px;
-    left: 30px;
-    border: solid black 1px;
+    border: solid black 5px;
+    margin: 0 auto;
+  }
 }
 
 .heading-background {
@@ -21,32 +20,118 @@
 
 .profile-picture {
     width: 200px;
-    height: 200px;
+    height: 180px;
     background-color: darkcyan;
-    border: solid black 1px;
-    top: 250px;
-    left: 10px;
+    border: solid black 5px;
+    top: 240px;
+    left: 15px;
+    border-radius: 5px;
+    position: relative;
 }
 
 h1 {
     font-size: 20px;
-    top:75px;
-    left:210px;
-    color: white;
+    top: 125px;
+    left: 230px;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    display: inline;
 }
 
 h2 {
     font-size: 15px;
-    top:70px;
-    left:210px;
-    color: white;
+    top:170px;
+    left:55px;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    display: inline;
 }
 
 .profile-buttons {
-    width: 300px;
-    height:200px;
-    border: 1px solid black;
-    background-color: yellow;
+    float: right;
+    top: 150px;
+    right: 5px;
+    position: relative;
+
+}
+
+.profile-buttons .Like {
+    border: solid black 2px;
+    border-radius: 2px;
+}
+
+.profile-buttons .Follow {
+    left: 53px;
+    border: solid black 2px;
+    border-radius: 2px;
+}
+
+.profile-buttons .Message {
+    left: 105px;
+    border: solid black 2px;
+    border-radius: 2px;
+}
+
+.profile-buttons .More {
+    left: 170px;
+    border: solid black 2px;
+    content: "•••"
+}
+
+nav {
+    font-size: large;
+    text-align: center;
+}
+
+nav .container1 ul {
+    list-style: none;
+}
+
+nav .container1 ul li {
+    display: inline;
+    
+
+}
+
+nav .Timeline {
+    margin:  auto;
+}
+
+nav .Timeline::after {
+    content: "|";
+}
+    
+
+nav .About {
+    margin: auto;
+    
+}
+
+nav .About::after {
+    content: "|";
+}
+
+nav .Welcome {
+     margin: 0 auto;
+}
+
+
+nav .Welcome::after {
+    content: "|";
+}
+
+nav .FWB {
+    margin: 0 auto;
+    
+}
+
+nav .FWB::after {
+    content:"|";
+}
+
+
+nav .More {
+    margin: 0 auto;
 }
